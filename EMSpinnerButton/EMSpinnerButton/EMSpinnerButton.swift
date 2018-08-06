@@ -67,8 +67,8 @@ open class EMSpinnerButton: UIButton {
     }
   }
     
-  public func setFontName(name: String) {
-    self.titleLabel?.font = UIFont.init(name: name, size: 15)
+  public func setFontName(name: String, size: CGFloat) {
+    self.titleLabel?.font = UIFont.init(name: name, size: size)
   }
   
   /// Sets the colors for the gradient backgorund
