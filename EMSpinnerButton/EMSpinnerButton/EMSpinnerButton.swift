@@ -51,15 +51,15 @@ open class EMSpinnerButton: UIButton {
     self.layer.addSublayer(spiner)
     return spiner
   }()
-  
+    
   internal lazy var gradientLayer: CAGradientLayer = {
     let gradient = CAGradientLayer(frame: self.frame)
-    gradient.startPoint = CGPoint(x: 0.0, y: 0.0)
-    gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
+    gradient.startPoint = CGPoint(x: 0.0, y: 0.5)
+    gradient.endPoint = CGPoint(x: 1, y: 0.5)
     layer.insertSublayer(gradient, at: 0)
     return gradient
   }()
-  
+    
   /// Sets the spinner color
   public var spinnerColor:CGColor? {
     willSet {
