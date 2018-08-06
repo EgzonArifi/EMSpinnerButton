@@ -66,6 +66,10 @@ open class EMSpinnerButton: UIButton {
       spinner.color = newValue
     }
   }
+    
+  public func setFontName(name: String) {
+    self.titleLabel?.font = UIFont.init(name: name, size: 15)
+  }
   
   /// Sets the colors for the gradient backgorund
   public var gradientColors: [CGColor]? {
@@ -115,7 +119,7 @@ open class EMSpinnerButton: UIButton {
 
 internal extension EMSpinnerButton {
   internal func setUp() {
-    self.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .medium)
+    //self.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .medium)
     self.backgroundColor = .emLightBlue
     self.titleColor = .white
   }
